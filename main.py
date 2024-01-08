@@ -20,10 +20,10 @@ async def onReady():
 @slash_command(name="shower_thought", description="Says 1 or more shower thoughts.")
 @slash_option(name="count", description="Number of shower thoughts to show.", required=False, opt_type=OptionType.INTEGER)
 async def showerThought(ctx: SlashContext, count: int=1):
-    try:
+    try: # An error is thrown if we send >2000 characters so this is required
         await ctx.send(randomThought(count))
     except:
-        await ctx.send('**Too many shower thoughts at once!** *⁽ᵖʳᵒᵇᵃᵇˡʸ⁾*')
+        await ctx.send('**Too many shower thoughts at once!**')
         print('!!---   Probably too many shower thoughts at once.   ---!!')
 
 token=open("token.txt", "r")
