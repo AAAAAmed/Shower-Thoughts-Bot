@@ -16,7 +16,7 @@ Just a discord bot that says some shower thoughts.
 - Run `main.py`
 
 That's it! You should see the bot in your server be online.
-To use the bot, just type /shower_thought and optionally you can tell it how many shower thoughts you want (the default is 1).
+To use the bot, just type `/shower_thought` and optionally you can tell it how many shower thoughts you want (the default is 1).
 
 The bot chooses a random thought from the `showerThoughts.txt` file, to add your own shower thoughts make a new line for each thought.
 
